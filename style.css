@@ -434,3 +434,45 @@ h1, h2, h3 {
     font-size: 15px;
   }
 }
+
+/* About content styling */
+.about-content {
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+.highlight-quote {
+    margin-top: 30px !important;
+    color: #00ffe1 !important;
+    font-style: italic !important;
+    border-left: 4px solid #ff00c8 !important;
+    padding-left: 12px !important;
+}
+
+.contact-links {
+    margin-top: 30px !important;
+}
+
+.contact-info {
+    margin-top: 20px !important;
+}
+
+/* Mobile overrides for new classes */
+@media (max-width: 768px) {
+  .about-content {
+    font-size: 13px !important;
+    line-height: 1.4 !important;
+    padding: 5px !important;
+  }
+  
+  .highlight-quote {
+    padding-left: 8px !important;
+    font-size: 12px !important;
+    margin-top: 15px !important;
+  }
+  
+  .contact-links, .contact-info {
+    margin-top: 15px !important;
+    font-size: 12px !important;
+  }
+}
