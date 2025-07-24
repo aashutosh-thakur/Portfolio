@@ -12,9 +12,27 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    /* --- Custom Cursor --- */
-    /* Sets the default cursor for the whole page. The 'auto' is a fallback. */
     cursor: url('assets/cursor_default.png'), auto;
+}
+
+/* Hide cursor on mobile */
+@media (max-width: 768px) {
+  body {
+    cursor: auto !important;
+  }
+  
+  a {
+    cursor: pointer !important;
+  }
+  
+  .menu-icon {
+    cursor: pointer !important;
+  }
+  
+  /* Hide custom cursor dots on mobile */
+  .sira-dot {
+    display: none !important;
+  }
 }
 
 a {
@@ -101,7 +119,7 @@ h1, h2, h3 {
   width: 5px;
   height: 5px;
 }
-/* Navbar container */
+/* Navbar - works for both desktop and mobile */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -114,7 +132,6 @@ h1, h2, h3 {
   z-index: 999;
 }
 
-/* Main links – visible on desktop */
 .nav-links {
   display: flex;
   flex-wrap: wrap;
@@ -128,7 +145,6 @@ h1, h2, h3 {
   font-size: 16px;
 }
 
-/* Menu icon (☰) – hidden by default */
 .menu-icon {
   display: none;
   font-size: 28px;
@@ -136,11 +152,10 @@ h1, h2, h3 {
   cursor: pointer;
 }
 
-/* Responsive – for mobile */
+/* Mobile responsive */
 @media (max-width: 768px) {
   .navbar {
     padding: 15px 20px;
-    justify-content: space-between;
   }
 
   .menu-icon {
@@ -174,9 +189,64 @@ h1, h2, h3 {
   .nav-links a:last-child {
     border-bottom: none;
   }
-}
-body {
-  cursor: none;
+
+  .container {
+    padding: 20px 15px;
+    margin: 10px;
+  }
+  
+  .profile-img {
+    width: 120px;
+    height: 120px;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin: 15px 0;
+  }
+  
+  h2 {
+    font-size: 20px;
+    margin: 20px 0 15px 0;
+  }
+  
+  .section {
+    margin-top: 25px;
+  }
+  
+  .section div[style*="line-height"] {
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+    padding: 5px 10px !important;
+  }
+  
+  .section p {
+    margin: 15px 0;
+    word-wrap: break-word;
+  }
+  
+  .section p[style*="margin-top: 30px"] {
+    margin-top: 20px !important;
+  }
+  
+  .section p[style*="margin-top: 20px"] {
+    margin-top: 15px !important;
+  }
+  
+  .section p[style*="border-left"] {
+    padding-left: 8px !important;
+    font-size: 14px !important;
+    margin: 15px 0 !important;
+  }
+  
+  .section a {
+    word-break: break-all;
+    font-size: 14px;
+  }
+  
+  .section strong {
+    font-size: 15px;
+  }
 }
 
 /* Navbar for multi-page layout */
