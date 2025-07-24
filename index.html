@@ -8,22 +8,42 @@
 </head>
 <body>
 <div class="navbar">
-  <div class="menu-icon" onclick="toggleMenu()">☰</div>
-  <div class="nav-links" id="navLinks">
     <a href="index.html">Home</a>
     <a href="education.html">Education</a>
     <a href="project.html">Projects</a>
     <a href="experience.html">Experience</a>
     <a href="extra-curricular.html">Extra Curricular</a>
     <a href="certificates.html">Certificates</a>
+</div>
+
+<!-- Floating Menu for Mobile -->
+<div class="floating-menu">
+  <button class="floating-menu-btn" onclick="toggleFloatingMenu()">☰</button>
+  <div class="floating-menu-options" id="floatingMenuOptions">
+    <a href="index.html">🏠 Home</a>
+    <a href="education.html">🎓 Education</a>
+    <a href="project.html">💡 Projects</a>
+    <a href="experience.html">🧠 Experience</a>
+    <a href="extra-curricular.html">🌟 Extra Curricular</a>
+    <a href="certificates.html">📜 Certificates</a>
   </div>
 </div>
 
 <script>
-  function toggleMenu() {
-    const navLinks = document.getElementById("navLinks");
-    navLinks.classList.toggle("active");
+  function toggleFloatingMenu() {
+    const options = document.getElementById("floatingMenuOptions");
+    options.classList.toggle("active");
   }
+
+  // Close menu when clicking outside
+  document.addEventListener('click', function(event) {
+    const menu = document.querySelector('.floating-menu');
+    const options = document.getElementById("floatingMenuOptions");
+    
+    if (!menu.contains(event.target)) {
+      options.classList.remove("active");
+    }
+  });
 </script>
 
 <div class="container">
@@ -36,7 +56,7 @@
         <h2>👨‍💻 About Me</h2>
         <div class="about-content">
             <p>
-                I'm <strong>Aashutosh Thakur</strong>, a passionate and curious B.Tech CSE student specializing in Cybersecurity at <strong>Rashtriya Raksha University, Gandhinagar</strong>. With a strong interest in <strong>ethical hacking, penetration testing</strong>, and <strong>secure software development</strong>, I've worked on meaningful cybersecurity projects like <strong><a href="https://aashutosh-thakur.github.io/Project-Injection/index.html" target="_blank">Project-Injection</a></strong>, which showcases practical web vulnerability testing, and <strong><a href="https://github.com/JAMPANIKOMAL/SiRa" target="_blank">SiRa</a></strong>, a secure health management system with encrypted data storage and emergency access features. My technical toolkit includes <strong>Burp Suite, Wireshark</strong>, and <strong>VirtualBox</strong>. I enjoy solving CTFs, exploring real-world vulnerabilities, and contributing to ethical security research. I've also taken on leadership roles in campus organizations like <strong>Incubeta</strong> and <strong>The Cyber Alliance</strong>, where I coordinate events and foster cybersecurity awareness.
+                I'm a passionate cybersecurity enthusiast and B.Tech student at Rashtriya Raksha University, specializing in Computer Science & Engineering with a focus on Cybersecurity. My journey in the digital security realm has been driven by curiosity and a commitment to understanding the evolving landscape of cyber threats.
             </p>
 
             <p class="highlight-quote">
