@@ -18,11 +18,39 @@
     <a href="certificates.html">Certificates</a>
   </div>
 </div>
+
+<!-- Floating Menu for Mobile -->
+<div class="floating-menu">
+  <button class="floating-menu-btn" onclick="toggleFloatingMenu()">☰</button>
+  <div class="floating-menu-options" id="floatingMenuOptions">
+    <a href="index.html">🏠 Home</a>
+    <a href="education.html">🎓 Education</a>
+    <a href="project.html">💡 Projects</a>
+    <a href="experience.html">🧠 Experience</a>
+    <a href="extra-curricular.html">🌟 Extra Curricular</a>
+    <a href="certificates.html">📜 Certificates</a>
+  </div>
+</div>
+
 <script>
+  function toggleFloatingMenu() {
+    const options = document.getElementById("floatingMenuOptions");
+    options.classList.toggle("active");
+  }
+
   function toggleMenu() {
     const navLinks = document.getElementById("navLinks");
     navLinks.classList.toggle("active");
   }
+
+  document.addEventListener('click', function(event) {
+    const menu = document.querySelector('.floating-menu');
+    const options = document.getElementById("floatingMenuOptions");
+    
+    if (!menu.contains(event.target)) {
+      options.classList.remove("active");
+    }
+  });
 </script>
 
 <div class="container">
