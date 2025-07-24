@@ -2,16 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects - Aashutosh Thakur</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <script>
-  function toggleMenu() {
-    document.getElementById("navLinks").classList.toggle("active");
-  }
-</script>
-
 <div class="navbar">
   <div class="menu-icon" onclick="toggleMenu()">☰</div>
   <div class="nav-links" id="navLinks">
@@ -24,13 +19,13 @@
   </div>
 </div>
 
-<!-- Custom Cyber Cursor -->
-<div class="sira-dot big-dot"></div>
-<div class="sira-dot med-dot"></div>
-<div class="sira-dot sm-dot"></div>
-<div class="sira-dot sm-dot"></div>
-<div class="sira-dot sm-dot"></div>
-<script src="public/js/cursor.js"></script>
+<script>
+  function toggleMenu() {
+    const navLinks = document.getElementById("navLinks");
+    navLinks.classList.toggle("active");
+  }
+</script>
+
 <div class="container">
     <h2>💡 Projects</h2>
 
@@ -54,5 +49,14 @@
         </p>
     </div>
 </div>
+
+<!-- Custom Cyber Cursor -->
+<div class="sira-dot big-dot"></div>
+<div class="sira-dot med-dot"></div>
+<div class="sira-dot sm-dot"></div>
+<div class="sira-dot sm-dot"></div>
+<div class="sira-dot sm-dot"></div>
+<script src="public/js/cursor.js"></script>
+
 </body>
 </html>

@@ -190,87 +190,47 @@ h1, h2, h3 {
   cursor: pointer;
 }
 
-/* Mobile responsive - SINGLE VERSION */
+/* Mobile responsive */
 @media (max-width: 768px) {
   .navbar {
-    padding: 15px 20px;
+    padding: 15px 20px !important;
+    justify-content: flex-end !important;
   }
 
   .menu-icon {
-    display: block;
+    display: block !important;
+    font-size: 32px !important;
+    color: #00ffe1 !important;
   }
 
   .nav-links {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: #000000f9;
-    padding: 20px;
-    border-top: 1px solid #00ffe1;
-    gap: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    display: none !important;
+    flex-direction: column !important;
+    position: absolute !important;
+    top: 100% !important;
+    right: 0 !important;
+    width: 250px !important;
+    background-color: #000000f9 !important;
+    padding: 25px !important;
+    border-top: 1px solid #00ffe1 !important;
+    border-left: 1px solid #00ffe1 !important;
+    gap: 20px !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5) !important;
   }
 
   .nav-links.active {
-    display: flex;
+    display: flex !important;
   }
 
   .nav-links a {
-    font-size: 14px !important;
-    padding: 8px 0;
-    border-bottom: 1px solid rgba(0, 255, 225, 0.2);
+    font-size: 18px !important;
+    padding: 12px 0 !important;
+    border-bottom: 1px solid rgba(0, 255, 225, 0.2) !important;
+    text-align: center !important;
   }
 
   .nav-links a:last-child {
-    border-bottom: none;
-  }
-
-  .container {
-    padding: 15px 10px !important;
-    margin: 5px !important;
-  }
-  
-  .profile-img {
-    width: 100px !important;
-    height: 100px !important;
-  }
-  
-  h1 {
-    font-size: 20px !important;
-    margin: 10px 0 !important;
-  }
-  
-  h2 {
-    font-size: 18px !important;
-    margin: 15px 0 10px 0 !important;
-  }
-  
-  .section {
-    margin-top: 20px !important;
-  }
-  
-  .section div[style*="line-height"] {
-    font-size: 14px !important;
-    line-height: 1.5 !important;
-    padding: 8px !important;
-  }
-  
-  .section p {
-    margin: 12px 0 !important;
-    word-wrap: break-word;
-    font-size: 14px !important;
-  }
-  
-  .section a {
-    word-break: break-all;
-    font-size: 13px !important;
-  }
-  
-  .section strong {
-    font-size: 14px !important;
+    border-bottom: none !important;
   }
 }
 

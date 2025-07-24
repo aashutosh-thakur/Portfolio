@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Certificates - Aashutosh Thakur</title>
   <link rel="stylesheet" href="style.css" />
   <style>
@@ -61,13 +62,6 @@
 </head>
 <body>
 
-<!-- Custom Cyber Cursor -->
-<div class="sira-dot big-dot"></div>
-<div class="sira-dot med-dot"></div>
-<div class="sira-dot sm-dot"></div>
-<div class="sira-dot sm-dot"></div>
-<div class="sira-dot sm-dot"></div>
-<script src="public/js/cursor.js"></script>
 <div class="navbar">
   <div class="menu-icon" onclick="toggleMenu()">☰</div>
   <div class="nav-links" id="navLinks">
@@ -79,6 +73,13 @@
     <a href="certificates.html">Certificates</a>
   </div>
 </div>
+
+<script>
+  function toggleMenu() {
+    const navLinks = document.getElementById("navLinks");
+    navLinks.classList.toggle("active");
+  }
+</script>
 
 <div class="container">
   <h2>📜 Certificates</h2>
@@ -95,60 +96,11 @@
       <h3>C3SA Premium Edition</h3>
       <img src="certs/c3sa.png" alt="C3SA Certificate">
     </div>
-
-    <!-- Certificate 3 -->
-    <div class="cert-card">
-      <h3>AppSec Hackathon</h3>
-      <img src="certs/appsec.png" alt="AppSec Hackathon Certificate">
-    </div>
-    <!-- Certificate 4 -->
-    <div class="cert-card">
-      <h3>Advent of Cyber 2024</h3>
-      <img src="certs/aoc.png" alt="Advent of Cyber 2024">
-    </div>
-    <!-- Certificate 5 -->
-    <div class="cert-card">
-      <h3>Cybersecurity Cloud Security</h3>
-      <img src="certs/cloudsecurity.png" alt="Cybersecurity Cloud Security">
-    </div>
-    <!-- Certificate 6 -->
-    <div class="cert-card">
-      <h3>Google AI Essentials</h3>
-      <img src="certs/gai.png" alt="Google AI Essentials">
-    </div>
-    <!-- Certificate 7-->
-    <div class="cert-card">
-      <h3>7th Edition of Indo-Ducth Cyber Security School</h3>
-      <img src="certs/idcss.png" alt="7th Edition of Indo-Dutch Cyber Security School">
-    </div>
     <!-- Certificate 8-->
     <div class="cert-card">
       <h3>Cybersecurity Symposium SOEBIT/AKATI</h3>
       <img src="certs/soebit.png" alt="Cybersecurity Symposium SOEBIT/AKATI">
     </div>
-
-    <!-- Certificate 9 -->
-    <div class="cert-card">
-      <h3>International Conference on AI & Cybersecurity</h3>
-      <img src="certs/aics.png" alt="International Conference on AI & Cybersecurity">
-    </div>
-    <!-- Certificate 10 -->
-    <div class="cert-card">
-      <h3>Introduction to Networking NVIDIA</h3>
-      <img src="certs/nvidia.png" alt="Introduction to Networking NVIDIA">
-    </div>
-    <!-- Certificate 11 -->
-    <div class="cert-card">
-      <h3>Introduction to Cybersecurity Cisco</h3>
-      <img src="certs/ioccisco.png" alt="Introduction to Cybersecurity Cisco">
-    </div>
-    <!-- Certificate 12-->
-    <div class="cert-card">
-      <h3>Student SOC Program Foundations training</h3>
-      <img src="certs/mssoc.png" alt="Student SOC Program Foundations training">
-    </div>
-    <!-- Certificate 13 -->
-    <div class="cert-card">
       <h3>OSINTCon</h3>
       <img src="certs/osintcon.png" alt="OSINTCon">
     </div>
@@ -225,11 +177,14 @@
 
   </div>
 </div>
-<script>
-  function toggleMenu() {
-    document.getElementById("navLinks").classList.toggle("active");
-  }
-</script>
+
+<!-- Custom Cyber Cursor -->
+<div class="sira-dot big-dot"></div>
+<div class="sira-dot med-dot"></div>
+<div class="sira-dot sm-dot"></div>
+<div class="sira-dot sm-dot"></div>
+<div class="sira-dot sm-dot"></div>
+<script src="public/js/cursor.js"></script>
 
 </body>
 </html>

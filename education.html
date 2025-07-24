@@ -2,16 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Education - Aashutosh Thakur</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<script>
-  function toggleMenu() {
-    document.getElementById("navLinks").classList.toggle("active");
-  }
-</script>
-
 <div class="navbar">
   <div class="menu-icon" onclick="toggleMenu()">☰</div>
   <div class="nav-links" id="navLinks">
@@ -23,6 +18,13 @@
     <a href="certificates.html">Certificates</a>
   </div>
 </div>
+
+<script>
+  function toggleMenu() {
+    const navLinks = document.getElementById("navLinks");
+    navLinks.classList.toggle("active");
+  }
+</script>
 
 <div class="container">
     <div class="section">
