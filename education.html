@@ -6,6 +6,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<script>
+  function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("active");
+  }
+</script>
+
 <div class="navbar">
   <div class="menu-icon" onclick="toggleMenu()">☰</div>
   <div class="nav-links" id="navLinks">
@@ -50,3 +56,4 @@
 <div class="sira-dot sm-dot"></div>
 <div class="sira-dot sm-dot"></div>
 <script src="public/js/cursor.js"></script>
+</body>
