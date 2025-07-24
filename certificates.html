@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Certificates - Aashutosh Thakur</title>
   <link rel="stylesheet" href="style.css" />
   <style>
@@ -13,13 +14,12 @@
       padding: 0;
     }
 
-.container {
-  padding: 30px 30px;
-  max-width: 980px;
-  margin: auto;
-  overflow: hidden;
-}
-
+    .container {
+      padding: 30px 30px;
+      max-width: 980px;
+      margin: auto;
+      overflow: hidden;
+    }
 
     h2 {
       font-size: 2rem;
@@ -57,17 +57,17 @@
       border: 1px solid #00ffe1;
       box-shadow: 0 0 8px rgba(0, 255, 225, 0.3);
     }
+
+    /* Hide cursor dots on mobile for certificates page */
+    @media (max-width: 768px) {
+      .sira-dot {
+        display: none !important;
+      }
+    }
   </style>
 </head>
 <body>
 
-<!-- Custom Cyber Cursor -->
-<div class="sira-dot big-dot"></div>
-<div class="sira-dot med-dot"></div>
-<div class="sira-dot sm-dot"></div>
-<div class="sira-dot sm-dot"></div>
-<div class="sira-dot sm-dot"></div>
-<script src="public/js/cursor.js"></script>
 <div class="navbar">
   <div class="menu-icon" onclick="toggleMenu()">☰</div>
   <div class="nav-links" id="navLinks">
@@ -80,11 +80,17 @@
   </div>
 </div>
 
+<script>
+  function toggleMenu() {
+    const navLinks = document.getElementById("navLinks");
+    navLinks.classList.toggle("active");
+  }
+</script>
+
 <div class="container">
   <h2>📜 Certificates</h2>
 
   <div class="cert-grid">
-
     <!-- Certificate 1 -->
     <div class="cert-card">
       <h3>Google Cybersecurity</h3>
@@ -95,7 +101,6 @@
       <h3>C3SA Premium Edition</h3>
       <img src="certs/c3sa.png" alt="C3SA Certificate">
     </div>
-
     <!-- Certificate 3 -->
     <div class="cert-card">
       <h3>AppSec Hackathon</h3>
@@ -126,7 +131,6 @@
       <h3>Cybersecurity Symposium SOEBIT/AKATI</h3>
       <img src="certs/soebit.png" alt="Cybersecurity Symposium SOEBIT/AKATI">
     </div>
-
     <!-- Certificate 9 -->
     <div class="cert-card">
       <h3>International Conference on AI & Cybersecurity</h3>
@@ -222,14 +226,16 @@
       <h3>Innovation NEXUS 2025, AIC-RRU</h3>
       <img src="certs/nexus.png" alt="Innovation NEXUS 2025, AIC-RRU">
     </div>
-
   </div>
 </div>
-<script>
-  function toggleMenu() {
-    document.getElementById("navLinks").classList.toggle("active");
-  }
-</script>
+
+<!-- Custom Cyber Cursor -->
+<div class="sira-dot big-dot"></div>
+<div class="sira-dot med-dot"></div>
+<div class="sira-dot sm-dot"></div>
+<div class="sira-dot sm-dot"></div>
+<div class="sira-dot sm-dot"></div>
+<script src="public/js/cursor.js"></script>
 
 </body>
 </html>
