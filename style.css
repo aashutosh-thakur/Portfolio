@@ -29,9 +29,96 @@ body {
     cursor: pointer !important;
   }
   
-  /* Hide custom cursor dots on mobile */
   .sira-dot {
     display: none !important;
+  }
+
+  .navbar {
+    padding: 15px 20px !important;
+  }
+
+  .menu-icon {
+    display: block !important;
+  }
+
+  .nav-links {
+    display: none !important;
+    flex-direction: column !important;
+    position: absolute !important;
+    top: 100% !important;
+    left: 0 !important;
+    width: 100% !important;
+    background-color: #000000f9 !important;
+    padding: 20px !important;
+    border-top: 1px solid #00ffe1 !important;
+    gap: 15px !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5) !important;
+  }
+
+  .nav-links.active {
+    display: flex !important;
+  }
+
+  .nav-links a {
+    font-size: 14px !important;
+    padding: 8px 0 !important;
+    border-bottom: 1px solid rgba(0, 255, 225, 0.2) !important;
+  }
+
+  .nav-links a:last-child {
+    border-bottom: none !important;
+  }
+
+  .container {
+    padding: 15px 10px !important;
+    margin: 5px !important;
+    max-width: 95% !important;
+  }
+  
+  .profile-img {
+    width: 100px !important;
+    height: 100px !important;
+  }
+  
+  h1 {
+    font-size: 18px !important;
+    margin: 10px 0 !important;
+  }
+  
+  h2 {
+    font-size: 16px !important;
+    margin: 15px 0 10px 0 !important;
+  }
+  
+  .section {
+    margin-top: 15px !important;
+  }
+  
+  .section div[style*="line-height"] {
+    font-size: 13px !important;
+    line-height: 1.4 !important;
+    padding: 5px !important;
+  }
+  
+  .section p {
+    margin: 10px 0 !important;
+    word-wrap: break-word !important;
+    font-size: 13px !important;
+  }
+  
+  .section a {
+    word-break: break-all !important;
+    font-size: 12px !important;
+  }
+  
+  .section strong {
+    font-size: 13px !important;
+  }
+
+  .section p[style*="border-left"] {
+    padding-left: 8px !important;
+    font-size: 12px !important;
+    margin: 10px 0 !important;
   }
 }
 
