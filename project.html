@@ -1,3 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Aashutosh Thakur</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Cybersecurity and web development projects by Aashutosh Thakur including Project-Injection, RRU Navigator, and SiRa health management system.">
+    <meta name="keywords" content="Aashutosh Thakur Projects, Project-Injection, XSS Testing, SQL Injection, RRU Navigator, SiRa Health Records, Web Security, Cybersecurity Projects, GitHub Projects">
+    <meta name="author" content="Aashutosh Thakur">
+
+    <!-- Social Sharing (Open Graph) -->
+    <meta property="og:title" content="Projects - Aashutosh Thakur" />
+    <meta property="og:description" content="Explore cybersecurity and development projects including web security testing platforms and health management systems." />
+    <meta property="og:url" content="https://aashutosh-thakur.github.io/Portfolio/project.html" />
+    <meta property="og:type" content="website" />
+</head>
+<body>
+<div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="education.html">Education</a>
+    <a href="project.html">Projects</a>
+    <a href="experience.html">Experience</a>
+    <a href="extra-curricular.html">Extra Curricular</a>
+    <a href="certificates.html">Certificates</a>
+</div>
+
+<!-- Floating Menu for Mobile -->
+<div class="floating-menu">
+  <button class="floating-menu-btn" onclick="toggleFloatingMenu()">☰</button>
+  <div class="floating-menu-options" id="floatingMenuOptions">
+    <a href="index.html">🏠 Home</a>
+    <a href="education.html">🎓 Education</a>
+    <a href="project.html">💡 Projects</a>
+    <a href="experience.html">🧠 Experience</a>
+    <a href="extra-curricular.html">🌟 Extra Curricular</a>
+    <a href="certificates.html">📜 Certificates</a>
+  </div>
+</div>
+
+<script>
+  function toggleFloatingMenu() {
+    const options = document.getElementById("floatingMenuOptions");
+    options.classList.toggle("active");
+  }
+
+  document.addEventListener('click', function(event) {
+    const menu = document.querySelector('.floating-menu');
+    const options = document.getElementById("floatingMenuOptions");
+    
+    if (!menu.contains(event.target)) {
+      options.classList.remove("active");
+    }
+  });
+</script>
+
+<div class="container">
+    <h2>💡 Projects</h2>
+
+    <div style="font-size: 17px; line-height: 1.9; padding: 10px 20px;">
+      <div class="project-card">
+  <h3>Phishing PDF Checker 🔍</h3>
+  <p>
+    A smart web-based utility to detect phishing content in PDFs, images, and text files using client-side analysis with dynamic UI.
+  </p>
+  <ul>
+    <li>Supports multiple file types: PDF, PNG, TXT</li>
+    <li>Displays extracted data and analysis results</li>
+    <li>Dark/light theme toggle</li>
+    <li>Custom UI with file validation and JS modules</li>
+  </ul>
+  <a href="https://aashutosh-thakur.github.io/Project-Phishing-Checker/" target="_blank" class="visit-btn">🔗 Visit Project</a>
 <div style="font-size: 17px; line-height: 1.9; padding: 10px 20px;">
 
   <!-- Project 1: Phishing PDF Checker -->
@@ -61,3 +135,15 @@
   </div>
 
 </div>
+
+
+<!-- Custom Cyber Cursor -->
+<div class="sira-dot big-dot"></div>
+<div class="sira-dot med-dot"></div>
+<div class="sira-dot sm-dot"></div>
+<div class="sira-dot sm-dot"></div>
+<div class="sira-dot sm-dot"></div>
+<script src="public/js/cursor.js"></script>
+
+</body>
+</html>
