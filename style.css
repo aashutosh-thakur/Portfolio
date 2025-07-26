@@ -72,6 +72,9 @@ body {
     border-bottom: none !important;
   }
 }
+body {
+  cursor: none;
+}
 
 a {
     text-decoration: none;
