@@ -32,7 +32,7 @@ Visit my portfolio: [https://aashutoshthakur.page](https://aashutoshthakur.page)
 - **Frontend**: HTML5, CSS3, JavaScript
 - **Styling**: Custom CSS with responsive design
 - **Assets**: Custom cursor effects, optimized images
-- **Deployment**: GitHub Pages
+- **Deployment**: Custom Domain (aashutoshthakur.page)
 
 ## 🎨 Key Features
 
