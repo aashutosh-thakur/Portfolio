@@ -62,7 +62,15 @@
       options.classList.remove("active");
     }
   });
-</script>
+  // Auto-redirect to next page on scroll down
+  let redirected = false;
+  window.addEventListener('scroll', function() {
+    if (!redirected && (window.innerHeight + window.scrollY) >= document.body.offsetHeight - 50) {
+      redirected = true;
+      window.location.href = 'certificates.html';
+    }
+  });
+  </script>
 
 <div class="container">
     <h2>🌟 Extra Curricular Activities</h2>

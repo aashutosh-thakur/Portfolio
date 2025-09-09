@@ -123,6 +123,14 @@
       options.classList.remove("active");
     }
   });
+  // Auto-redirect to next page on scroll down
+  let redirected = false;
+  window.addEventListener('scroll', function() {
+    if (!redirected && (window.innerHeight + window.scrollY) >= document.body.offsetHeight - 50) {
+      redirected = true;
+      window.location.href = 'index.html';
+    }
+  });
 </script>
 
 <div class="container">
